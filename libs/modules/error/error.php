@@ -28,8 +28,16 @@ function error_exception($e){
 }
 
 function error_error($errno, $errstr, $errfile, $errline){
+
 	//convert errors into exceptions, we run a clean ship and want every error to crash
-	throw new ErrorException($errstr, 0, $errno, $errfile, $errline);
+	 try
+    {
+        throw new ErrorException($errstr, 0, $errno, $errfile, $errline);
+    }
+    catch (Exception $e)
+    {
+        print get_class($e)." thrown within the exception handler. Message: ".$e->getMessage()." on line ".$e->getLine();
+    }
 	return true;
 }
 
