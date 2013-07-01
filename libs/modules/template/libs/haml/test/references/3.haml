@@ -1,0 +1,11 @@
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "en", :lang => 'en'}
+	%head
+		%title I can has attributes!
+		%script{:type => "text/javascript",
+			:src => "javascripts/script_#{2 + 7}"}
+	
+	%body
+		.class#id{:id => ['b', 'a'], :class => ['a', $b]}
+			%img{:src => '/a/b/c'}/
+			%p{'style'=>"abc"} Paragraph!
+		%i{:var => $value}/

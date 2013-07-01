@@ -1,0 +1,48 @@
+[class^="icon-"], [class*=" icon-"] {
+	background-image: url("/libs/modules/template/theme/img/glyphicons-halflings.png");
+}
+
+th.headerSortUp:after {
+	float:right;
+	content: "↓";
+}
+
+th.headerSortDown:after {
+	float:right;
+	content: "↑";
+}
+
+.btn, .navbar-inner{
+	border-radius: 0;
+}
+
+
+.chartcontainer{
+	width:100%;
+	height:200px;
+}
+.chartcontainer .inner{
+	width:100000px;
+	height:200px;
+}
+
+.bar{
+	float:left;
+	border:1px solid #ccc;
+	background-color: #efefef;
+	wsidth:5px;
+	bottom: 0;
+}
+
+.input-source-btn a{
+	width:100%;
+	display: block;
+	height:100px;
+	background-color: #efefef;
+	line-height: 100px;
+	text-align: center;
+}
+
+.input-source-btn a:hover{
+	background-color: #B6B6B6;
+}
